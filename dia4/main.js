@@ -12,3 +12,7 @@ while(intentos > 0) {
         alert("Incorrecto, te quedan " + intentos + " intentos");
     }
 }
+
+if(intentos === 0) {
+    alert(`¡Lo siento, has agotado tus intentos!, el numero era ${numero}`);
+}
