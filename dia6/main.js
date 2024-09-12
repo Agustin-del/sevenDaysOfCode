@@ -34,7 +34,7 @@ while(true) {
                 break;
         } 
     } else if (agregarOEliminar == 2) {
-        let elementoAEliminar = prompt("¿Qué alimento deseas eliminar?");
+        let elementoAEliminar = prompt(`Frutas: ${frutas} \nLacteos: ${lacteos} \nCongelados: ${congelados} \nDulces: ${dulces} \n¿Qué alimento deseas eliminar?`);
         let existeElElemento = false;
         for(element of lacteos) {
             if (element == elementoAEliminar) {
