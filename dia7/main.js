@@ -20,9 +20,17 @@ function division (num1, num2) {
 
 while(true) {
     let operacion = prompt("Elige una operación a realizar: suma, resta, multiplicacion, division o salir");
-    if (operacion == "salir") {
+
+    if(operacion !== "suma" && operacion !== "resta" && operacion !== "multiplicacion" && operacion !== "division" && operacion !== "salir") {
+        alert("Operación no válida");
+        operacion = prompt("Elige una operación a realizar: suma, resta, multiplicacion, division, salir");
+    }
+    
+    if (operacion === "salir") {
+        alert("Hasta la vista");
         break;
     }
+
     let num1 = parseInt(prompt("Ingresa el primer número"));
     let num2 = parseInt(prompt("Ingresa el segundo número"));
     switch(operacion) {
@@ -41,9 +49,6 @@ while(true) {
             } else {
                 alert(division(num1, num2));
             }
-            break;
-        case "salir":
-            alert("Hasta la vista");
             break;
     }
 }
